@@ -21,7 +21,8 @@
         app:layout_constraintBottom_toTopOf="@+id/spinnerGender"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <Spinner
         android:id="@+id/spinnerGender"
@@ -50,14 +51,26 @@
         android:layout_width="196dp"
         android:layout_height="0dp"
         android:layout_marginBottom="32dp"
-        android:ems="10"
         android:hint="모임 이름은?"
-        android:inputType="textPersonName"
+
         app:layout_constraintBottom_toTopOf="@+id/buttonInput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerAge" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerAge"
+        android:paddingLeft="15dp"
+
+        android:layout_marginLeft="15dp"
+
+        android:layout_marginRight="15dp"
+
+        android:layout_marginTop="15dp"
+
+        android:ems="10"
+
+        android:background="@drawable/round"
+
+        android:inputType="textMultiLine"/>
 
     <Button
         android:id="@+id/buttonInput"
